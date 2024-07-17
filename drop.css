@@ -1,0 +1,116 @@
+header{
+    display: flex;
+    gap: 50px;
+    background-color: wheat;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+}
+.dropone{
+    position: relative;
+    display: inline-block;
+    margin-left: 10%;
+}
+.dropone p{
+    position:relative;
+    font-size: 20px;
+    cursor: pointer;
+}
+.dropone p::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; /* Adjust the height (thickness) of the underline */
+    bottom: -2px; /* Adjust the position of the underline */
+    left: 65%;
+    transform: translateX(-80%);
+    background-color: black; /* Adjust the color of the underline */
+    transition: width 0.3s ease-in-out; /* Adjust the duration and easing of the transition */
+}
+
+.dropone:hover p::before {
+    width: 50%;
+}
+.dropone p:hover{
+    font-weight: 550;
+}
+.menus {
+    display: none; /* Hide the menu initially */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 10px;
+    width: 600px;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns grid */
+    gap: 50px;
+}
+
+.dropone:hover .menus {
+    display: grid;/* Show the menu on hover */
+}
+
+.menus a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menus a:hover {
+    background-color: #cfcdcdce;
+}
+
+.menus img{
+    width: 40px;
+    height: 40px;
+}
+
+.submenu-container {
+    position: relative;
+}
+
+.submenu-container a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 20px;
+    width: 200px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+
+.submenu a {
+    padding: 10px 16px;
+    display: flex;
+    gap: 10px;
+}
+
+.submenu-container:hover .submenu {
+    display: grid;
+}
+
+.dropone input[type="text"] {
+    width: 150%;
+    padding: 10px;
+    margin-top: 11px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+}

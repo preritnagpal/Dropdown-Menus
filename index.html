@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Dropdown Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="drop.css">
+</head>
+<body>
+    <header>
+    <div class="dropone">
+        <p>Categories</p>
+        <div class="menus">
+            <a href="#"><img src="mobiles.jpeg">Mobiles</a>
+            <a href="#"><img src="laptop.jpeg">Laptops</a>
+            <a href="#"><img src="PC.jpeg">PCs</a>
+            <a href="#"><img src="headphone.jpeg">Headphones</a>
+            <a href="#"><img src="keyboards.png">Keyboards</a>
+            <a href="#"><img src="mouse.jpeg">Mouse</a>
+            <a href="#"><img src="Airpods.jpeg">Airpods</a>
+            <a href="#"><img src="television.jpeg">Television</a>
+            <a href="#"><img src="datacables.png">Data Cables</a>
+        </div>
+    </div>
+
+    <div class="dropone">
+        <p>Devices</p>
+        <div class="menus" style=" width: 200px; grid-template-columns: repeat(1, 1fr); gap: 10px;">
+            <div class="submenu-container">
+                <a href="#"><img src="chargers.jpeg" alt="Chargers">Chargers<i class="fas fa-angle-right"></i></a>
+                <div class="submenu">
+                    <a href="#"><img src="applecharger.jpg" alt="Apple">Apple<i class="fas fa-angle-right"></i></a>
+                    <a href="#"><img src="samsungcharger.png" alt="Samsung">Samsung<i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div class="submenu-container">
+                <a href="#"><img src="Airpods.jpeg" alt="Airpods">Airpods<i class="fas fa-angle-right"></i></a>
+                <div class="submenu">
+                    <a href="#"><img src="Airpods.jpeg" alt="A">Apple<i class="fas fa-angle-right"></i></a>
+                    <a href="#"><img src="samsung.jpg" alt="Samsung" style="width: 18%;">Samsung<i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div class="submenu-container">
+                <a href="#"><img src="keyboards.png" alt="Keyboards">Keyboards<i class="fas fa-angle-right"></i></a>
+                <div class="submenu">
+                    <a href="#"><img src="applekey.jpeg" alt="Apple">Apple<i class="fas fa-angle-right"></i></a>
+                    <a href="#"><img src="samsungkey.jpeg" alt="Samsung">Samsung<i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="dropone">
+            <input type="text" placeholder="Search" class="input">
+            <div class="menus" style="grid-template-columns: repeat(2, 1fr); gap: 10px; width: 320px;">
+            <h3 style=" grid-column: span 2;">Top Searches Brands</h3>
+            <a href="#"><img src="mobiles.jpeg">Mobiles</a>
+            <a href="#"><img src="laptop.jpeg">Laptops</a>
+            <a href="#"><img src="PC.jpeg">PCs</a>
+            <a href="#"><img src="headphone.jpeg">Headphones</a>
+            <a href="#"><img src="keyboards.png">Keyboards</a>
+            <a href="#"><img src="mouse.jpeg">Mouse</a>
+            <a href="#"><img src="Airpods.jpeg">Airpods</a>
+            <a href="#"><img src="television.jpeg">Television</a>
+            <a href="#"><img src="datacables.png">Data Cables</a>
+            <a href="#"><img src="datacables.png">Data Cables</a>
+            </div>
+        </div>
+    </div>    
+</header>
+</body>
+</html>
